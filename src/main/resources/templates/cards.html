@@ -6,11 +6,11 @@
 <div class="container">
     <div class="row">
         <div class="col s12">
-            <h1>All Banks</h1>
+            <h1>All Cards</h1>
             <ul class="collection">
-                <li class="collection-item"  data-th-each="bank : ${banks}">
-                    <a data-th-href="@{/banks/{id}/cards (id=${bank.id}) }">
-                        <span data-th-text="${bank.name}"></span>
+                <li class="collection-item"  data-th-each="card : ${cards}">
+                    <a>
+                        <span data-th-text="${card.name}"></span>
                     </a>
                 </li>
             </ul>
