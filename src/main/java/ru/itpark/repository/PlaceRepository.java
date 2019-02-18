@@ -2,7 +2,6 @@ package ru.itpark.repository;
 
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.stereotype.Repository;
-import ru.itpark.domain.Category;
 import ru.itpark.domain.Place;
 
 import java.util.List;

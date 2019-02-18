@@ -11,7 +11,10 @@ VALUES (1, 'Tinkoff Black',1),
        (1, 'Emotion', 2),
        (2, 'Generation', 2),
        (3, 'Evolution', 2),
-       (4, 'Premium', 2);
+       (4, 'Premium', 2),
+       (1, 'Virtual card', 3),
+       (2, 'MegaFon Gold', 3),
+       (3, 'MegaFon Standard', 3);
 
 INSERT INTO category (id, name, mcc)
 VALUES
