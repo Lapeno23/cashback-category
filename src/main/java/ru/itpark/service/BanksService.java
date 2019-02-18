@@ -15,4 +15,5 @@ public class BanksService {
     public List<Bank> findAll() {
         return banksRepository.findAll();
     }
+
 }

@@ -9,7 +9,7 @@
             <h1>All Cards</h1>
             <ul class="collection">
                 <li class="collection-item"  data-th-each="card : ${cards}">
-                    <a>
+                    <a data-th-href="@{/banks/{bankId}/cards/{cardId}/categories (bankId=${card.bankId},cardId=${card.id})}">
                         <span data-th-text="${card.name}"></span>
                     </a>
                 </li>
