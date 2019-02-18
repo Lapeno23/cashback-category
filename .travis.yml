@@ -1,6 +1,5 @@
 language: java
-jdk: oraclejdk11
-before_install: git update-index --chmod=+x mvnw
+jdk: oraclejdk11.0.2
 script: ./mvnw -e verify
 after_success:
   - bash <(curl -s https://codecov.io/bash)
