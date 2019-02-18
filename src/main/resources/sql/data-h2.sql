@@ -32,3 +32,6 @@ VALUES
        (3, 1, 3),
        (3, 1, 4);
 
+INSERT INTO places(id, mcc, name, category_id)
+VALUES ( 1,3000, 'Aeroflot', 1 )
+

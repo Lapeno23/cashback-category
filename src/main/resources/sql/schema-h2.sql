@@ -43,5 +43,7 @@ CREATE TABLE IF NOT EXISTS places
 (
   id   INTEGER AUTO_INCREMENT,
   mcc  INTEGER(5)   NOT NULL,
-  name VARCHAR(255) NOT NULL
+  name VARCHAR(255) NOT NULL,
+  category_Id INTEGER NOT NULL,
+  FOREIGN KEY (category_Id) REFERENCES category(id)
 );

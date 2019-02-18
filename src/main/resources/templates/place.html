@@ -8,10 +8,11 @@
         <div class="col s12">
             <h1>All Cards</h1>
             <ul class="collection">
-                <li class="collection-item" data-th-each="category : ${category}">
-                    <a data-th-href="@{/places?categoryId={categoryId} (categoryId=${category.id})}">
-                        <span data-th-text="${category.name}"></span>
-                        <span data-th-text="${category.mcc}"></span>
+                <li class="collection-item" data-th-each="place : ${places}">
+                    <a>
+                        <span data-th-text="${place.id}"></span>
+                        <span data-th-text="${place.name}"></span>
+                        <span data-th-text="${place.mcc}"></span>
                     </a>
                 </li>
             </ul>
