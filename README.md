@@ -1,4 +1,4 @@
-#**ashback-category**
+# Cashback-category
 
 [![Build Status](https://travis-ci.org/Lapeno23/cashback-category.svg?branch=master)](https://travis-ci.org/Lapeno23/cashback-category)
 
