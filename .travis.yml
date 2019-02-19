@@ -6,7 +6,6 @@ before_script:
       - chmod +x mvnw
 script:
   - ./mvnw -e verify
-  - - mvn test
 after_success:
   - bash <(curl -s https://codecov.io/bash)
 deploy:
