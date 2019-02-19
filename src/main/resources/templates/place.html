@@ -5,18 +5,20 @@
 
 <div class="container">
     <div class="row">
-        <div class="col s12">
-            <h1>All places</h1>
-            <ul class="collection">
-                <li class="collection-item" data-th-each="place : ${places}">
-                    <a>
-                        <span data-th-text="${place.id}"></span>
-                        <span data-th-text="${place.name}"></span>
-                        <span data-th-text="${place.mcc}"></span>
-                    </a>
-                </li>
-            </ul>
-
+        <div style="text-align: center;">
+            <div class="col s12">
+                <h1>All places</h1>
+                <ul class="collection">
+                    <li class="collection-item" data-th-each="place : ${places}">
+                        <a>
+                            <div style="color: black">
+                                <h4><span data-th-text="${place.name}"></span></h4> <h5>(mcc:
+                                <span data-th-text="${place.mcc}"></span>)</h5>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>

@@ -5,16 +5,17 @@
 
 <div class="container">
     <div class="row">
-        <div class="col s12">
-            <h1>All Cards</h1>
-            <ul class="collection">
-                <li class="collection-item"  data-th-each="card : ${cards}">
-                    <a data-th-href="@{/banks/{bankId}/cards/{cardId}/categories (bankId=${card.bankId},cardId=${card.id})}">
-                        <span data-th-text="${card.name}"></span>
-                    </a>
-                </li>
-            </ul>
-
+        <div style="text-align: center;">
+            <div class="col s12">
+                <h1>All Cards</h1>
+                <ul class="collection">
+                    <li class="collection-item" data-th-each="card : ${cards}">
+                        <a data-th-href="@{/banks/{bankId}/cards/{cardId}/categories (bankId=${card.bankId},cardId=${card.id})}">
+                            <h4><span data-th-text="${card.name}"></span></h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>

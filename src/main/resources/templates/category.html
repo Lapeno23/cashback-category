@@ -5,17 +5,18 @@
 
 <div class="container">
     <div class="row">
-        <div class="col s12">
-            <h1>All Categories</h1>
-            <ul class="collection">
-                <li class="collection-item" data-th-each="category : ${category}">
-                    <a data-th-href="@{/places?categoryId={categoryId} (categoryId=${category.id})}">
-                        <span data-th-text="${category.name}"></span>
-                        <span data-th-text="${category.mcc}"></span>
-                    </a>
-                </li>
-            </ul>
-
+        <div style="text-align: center;">
+            <div class="col s12">
+                <h1>All Categories</h1>
+                <ul class="collection">
+                    <li class="collection-item" data-th-each="category : ${category}">
+                        <a data-th-href="@{/places?categoryId={categoryId} (categoryId=${category.id})}">
+                            <h4><span data-th-text="${category.name}"></span></h4> <h5>(mcc:
+                            <span data-th-text="${category.mcc}"></span>)</h5>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
